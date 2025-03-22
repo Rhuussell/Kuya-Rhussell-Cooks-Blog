@@ -1,0 +1,120 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuya Rhussell's Culinary Blog</title>
+    <style>
+        :root {
+            --black: #333;
+            --gray: #444;
+            --white: #EEE;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--white);
+            color: var(--black);
+        }
+        
+        header {
+            background: var(--black);
+            padding: 20px;
+            text-align: center;
+            color: var(--white);
+            font-size: 24px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--gray);
+            padding: 10px;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        
+        @media (max-width: 768) {
+            nav {
+                flex-direction: column;
+                text-align: center
+            }
+            nav a {
+                margin: 10px 0;
+            }
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .comtainer {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        main {
+            background: var(--gray);
+            padding: 20px;
+            color: var(--white);
+            border-radius: 8px;
+        }
+        
+        aside {
+            background: var(--black);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        
+        <header>
+        <h1>Kuya's Cooking Blog</h1>
+        </header>
+        
+        <nav>
+        <a href="#">Kuya's Recepies</a>
+        <a href="#">Kuya's Cooking Tips</a>
+        <a href="#">Kuya's Blog</a>
+        <a href="#">About Kuya Rhussell's Culinary Blog</a>
+        <a href="#">Contact Us</a>   
+        </nav>
+        
+        <div class="container">
+        <main>
+            <h2>Kuya's Main Topic</h2>
+            <a href="Index.html">Click here!</a>
+        </main>
+            
+        <aside>
+        <h2>Kuya's Side Quest?</h2>
+        <a href="#">Click here</a>
+        </aside>
+        </div>
+        
+        <footer>
+        <p>&copy; 2025 Kuya's Blog. All rights reserved</p>
+        </footer>
+    </body>
+    </html>
